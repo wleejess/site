@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
 body, html {
@@ -25,6 +26,10 @@ body, html {
 .menu {
   display: none;
 }
+
+.jobtitles{
+  font-family: "Inconsolata", sans-serif;
+}
 </style>
 </head>
 <body>
@@ -42,18 +47,18 @@ body, html {
       <a href="#experience" class="w3-button w3-block gnav">EXPERIENCE</a>
     </div>
     <div class="w3-col s3">
-      <a href="#explore" class="w3-button w3-block gnav">EXPLORE</a>
+      <a href="#contact" class="w3-button w3-block gnav">CONTACT</a>
     </div>
   </div>
 </div>
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">it's nice to meet you.</span>
-  </div>
   <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:90px">hey!</span>
+    <span class="w3-text-white infinite animate__fadeIn" style="font-size:60px">hey! i'm jess.</span>
+  </div>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">I am driven by a desire to learn more and a curiosity to challenge what's possible.</span>
   </div>
 </header>
 
@@ -62,42 +67,41 @@ body, html {
 
 <!-- About Container -->
 <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">my name is jessica</span></h5>
-    <p>I am driven by a desire to learn more, and a curiosity that challenges what's possible.
-      Though this resulted in a non-linear path, I am grateful for the diverse experiences. 
-      Currently, I am studying Computer Science while working full-time as a project manager.</p>
-    <p>Check out my past *work experience here.
-      Or, you can go here to see **community involvement.
-      I try to make sense of the world around me through concepts I’ve learned. 
-      In many ways, writing about it serves as a method to better understand myself and the world around me. 
-      If you want to learn more about me as a person, you can take a glance *through my lens. </p>
-    <p>Lastly, I hoard quotes like a dragon hoards treasure. 
-      Each of these quotes have had *some effect on me, and continue to influence me to this day. 
-      Since you’ve scrolled all the way down here, I suppose I can share one with you.</p>
+  <div class="w3-content" style="max-width:1000px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">about me</span></h5>
+    <p>I am currently studying comupter science at Oregon State University.</p>
+    <p>**insert what my interests are**</p>
+    <ul>
+      <li>B.S. in Nanoengineering, minor in Chemistry from UCSD</li>
+      <li>Certified Associate in Project Management (CAPM)</li>
+    </ul>
+    <p>I find meaning through connecting with others. 
+      By dedicating myself to understanding their goals and experiences, 
+      I have built a library containing diverse anecdotes, rich with insights.</p>
+    <p>If you'd like to get to know me a little better, feel free to <a href="./explore.html">explore</a>.</p>
   </div>
 </div>
 
 <!-- Experience Container -->
 <div class="w3-container" id="experience">
-  <div class="w3-content" style="max-width:700px">
+  <div class="w3-content" style="max-width:1000px">
  
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">experiences</span></h5>
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">experience</span></h5>
   
     <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'work');" id="myLink">
+        <div class="w3-col s6 tablink">internships + work</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'community');">
+        <div class="w3-col s6 tablink">community involvement</div>
       </a>
     </div>
 
-    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Bread Basket</h5>
-      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    <div id="work" class="w3-container menu w3-padding-48 w3-card">
+      <h5 class="jobtitles">Quality & Performance Project Manager || Augmedix</h5>
+      <p class="w3-text-grey">something something details</p><br>
     
-      <h5>Honey Almond Granola with Fruits</h5>
+      <h5 class="jobtitles">Research Associate, Medicinal Chemistry || Vertex Pharmaceuticals</h5>
       <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
     
       <h5>Belgian Waffle</h5>
@@ -110,7 +114,7 @@ body, html {
       <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
     </div>
 
-    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+    <div id="community" class="w3-container menu w3-padding-48 w3-card">
       <h5>Coffee</h5>
       <p class="w3-text-grey">Regular coffee 2.50</p><br>
     
@@ -126,23 +130,17 @@ body, html {
       <h5>Soda</h5>
       <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
     </div>  
-    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
 </div>
 
 <!-- Contact/Area Container -->
-<div class="w3-container" id="explore" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at some address at some place.</p>
-    <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:1000px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">say hi!</span></h5>
+    <p>If you'd like to get in contact with me, fill out the form below. Thanks for stopping by. </p>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
       <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
     </form>
   </div>

@@ -1,0 +1,36 @@
+h3 {
+    animation-duration: 8s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 300px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  
+  .bgimg {
+    background-position:top;
+    background:#aaa1cf;
+    min-height: 50%;
+  }
+  
+  .gnav{
+    background:#e7e2de;
+  }
+  
+  .menu {
+    display: none;
+  }

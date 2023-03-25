@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jessica.lee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Urbanist:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.altbg{
+  background:#aaa1cf;
+}
+
+.dbhigh{
+  background:#0b2855;
+}
+
+.bgimg {
+  background-position:top;
+  background:#aaa1cf;
+  min-height: 50%;
+}
+
+.gnav{
+  font-size:medium;
+  background:#e7e2de;
+}
+
+.menu {
+  display: none;
+}
+
+.jobtitles{
+  font-family: "Inconsolata", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(30);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Bad Script', cursive;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding">
+    <div class="w3-col s3">
+      <a href="./index.html" class="w3-button w3-block gnav">HOME</a>
+    </div>
+    <div class="w3-col s3 w3-dropdown-hover">
+      <button class="w3-button w3-block gnav">ABOUT</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="./index.html#about" class="w3-bar-item w3-button">INTRO</a>
+        <a href="./explore.html" class="w3-bar-item w3-button">EXPLORE MORE</a>
+      </div>
+    </div>
+    <div class="w3-col s3">
+      <a href="./index.html#experience" class="w3-button w3-block gnav">EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="./contact.html" class="w3-button w3-block gnav">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white wrapper typing-demo" style="font-size:76px">let's connect!</span>
+  </div>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-medium">
+    <span class="w3-tag" style="font-size: 18px">i dont know if my form submission works yet</span>
+  </div>
+</header>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:1000px">
+    <p>If you'd like to get in contact with me, fill out the form below. Thanks for stopping by. </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">send msg.</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Starting template from: <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Modified with logic & love by Jess Lee</p>
+</footer>
+
+<script>
+</script>
+
+</body>
+</html>

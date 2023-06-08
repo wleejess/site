@@ -67,6 +67,73 @@ body, html {
   }
 }
 
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #000;
+  background-color: hsla(0, 0%, 20%, 0.9);
+  color: #fff;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid #000;
+  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
 </style>
 </head>
 <body>
@@ -104,35 +171,30 @@ body, html {
   <div class="w3-content" style="max-width:1200px">
   <article>
     <img src="./images/dreamworld.png" width="500" height="auto">
-    <p>For the longest time, I was certain that my passion was in medicine.</p>
-    <p>As you might have noticed (or experienced for yourself), passions change.</p>
-    <p>A quick glance at my resume might suggest that I am simply following the laws of entropy.<br>
+    <p>For the longest time, I was certain that my passion was in research.</p>
+    <p>As you might have noticed (or experienced for yourself), <u><b data-tooltip="A more accurate description is that they become refined.">passions change</b></u>.</p>
+    <p>A quick glance at my resume might suggest that my interests are also bound by the laws of entropy.<br>
       However, I promise there is a method to my madness.</p>
-    <p>Science is a form of magic. Growing up, I wanted nothing more than to leverage my understanding of the world and 
-      collaborate with others to make new innovations. I earned my B.S. in Nanoengineering and Chemistry at UCSD
-      and worked in the research & development of: cancer, cystic fibrosis, and chronic pain.</p>
-
-    <p>Throughout my time as both a student and researcher, I further refined my strengths and interests. 
-      I developed soft skills as a project manager, and learned to analyze large, multidimensional datasets using Python.
-      While I am grateful for my experiences in life sciences, I realized that it was time for a change. 
-      My next steps from there were to get my CAPM (Certified Associate in Project Management) certification, 
-      and to establish fundamentals in programming by pursuing a second B.S. in Computer Science at Oregon State University.</p>
+    <hr>
+    <p>Chemistry is magic. By leveraging our understanding of the world, we can direct <i>atoms</i> from different molecules
+      to come together, making something entirely new. Named reactions are like tried and true spells. And with each attempt
+      to synthesize a new drug, we get closer to changing the lives of patients around the world.
       
-    <p>I will use these combined experiences to help develop tools that researchers can use to streamline their work: everything from 
-      documenting experiments in detail to analyzing complex datasets. As a former scientist, I can understand and empathize with 
-      their needs. Moreover, as I'm learning more about computer science (data structures, algorithms, web development, databases), 
-      I am confident in my abilities to translate user needs into detailed requirements to guide the development 
-      and implementation of new programs.</p>
+      I earned my B.S. in Nanoengineering and Chemistry at UCSD and worked in the research & development of treatments for: cancer, cystic fibrosis, and pain.</p>
+    <hr>
+    <p>With each company I worked at and each <a href="./projects.html">project</a> I worked on, my world expanded. A project I led became a catalyst for change.<br>
+      I developed soft skills as a project manager and worked with cross-functional teams across chemistry, biology, hardware engineering and software engineering to
+      build an automated tool to accelerate the drug discovery process. In an effort to better communicate user requirements with our engineers and analyze the large, 
+      multidimensional datasets we were generating, I began to teach myself Python and R. Realizing that I wanted to establish fundamentals in programming,
+      I am now pursuing a B.S. in Computer Science at Oregon State University.</p>
 
     <p>If you'd like to learn more about my past experiences, you can find my CV <a href="./experience.html">here</a>.</p>
-    <p>If you'd like to get more details about specific projects, you can go <a href="./projects.html">here</a>.</p>
   </article>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Starting template from: <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   <p>Modified with logic & love by Jess Lee</p>
 </footer>
 

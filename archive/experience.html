@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jessica.lee</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Urbanist:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="/favicon.ico">
+</head>
+
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.altbg{
+  background:#aaa1cf;
+}
+
+.dbhigh{
+  background:#0b2855;
+}
+
+.bgimg {
+  background-position:top;
+  background:#5ea5de;
+  min-height: 50%;
+}
+
+.gnav{
+  font-size:medium;
+  background:#102034;
+  color:white;
+}
+
+
+.menu {
+  display: none;
+}
+
+.jobtitles{
+  font-family: "Inconsolata", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(30);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Bad Script', cursive;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+</style>
+
+<body>
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding">
+      <div class="w3-col s3">
+        <a href="./index.html" class="w3-button w3-block gnav">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="./explore.html" class="w3-button w3-block gnav">EXPLORE</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="./experience.html" class="w3-button w3-block gnav">EXPERIENCE</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="./contact.html" class="w3-button w3-block gnav">CONTACT</a>
+      </div>
+    </div>
+</div>
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-greyscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white wrapper typing-demo" style="font-size:76px">hey! i'm jessica.</span>
+  </div>
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-medium">
+    <span class="w3-tag" style="font-size: 18px">I am driven by a desire to learn more and a curiosity to challenge what's possible.</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-grayscale w3-large">
+
+<!-- Experience Container -->
+<div class="w3-container" id="experience">
+  <div class="w3-content" style="max-width:1000px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="dbhigh w3-tag w3-wide">experience</span></h5>
+    <p>Resume PDF: <b><a href="https://drive.google.com/file/d/1NnN4LOtBZSD0dd-bcvJ52mdZsUwUlUKP/view?usp=drive_link" target="_blank">Google Drive</a></b></p>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'work');" id="myLink">
+        <div class="w3-col s6 tablink">internships + work</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'community');">
+        <div class="w3-col s6 tablink">community involvement</div>
+      </a>
+    </div>
+
+    <div id="work" class="w3-container menu w3-padding-48 w3-card">
+      <h5 class="jobtitles">Quality & Performance Project Manager || Augmedix</h5>
+      <ul style="list-style-type: square">
+        <li>Led usability studies to drive decision making for UI changes, increasing product adoption to 90% for 1.5K employees</li>
+        <li>Conducted user interviews to identify pain points and design workshops to further increase tool usage</li>
+        <li>Assisted in ML initiatives to accurately populate key sections of a medical note, improving efficiency by 15%</li>
+        <li>Facilitated communications between technical and non-technical stakeholders to align on objectives and deadlines</li>
+        <li>Managed 3 direct reports and oversaw 5 global teams to initiate and monitor change management strategy</li></ul>
+     <br>
+    
+      <h5 class="jobtitles">Research Associate, Medicinal Chemistry || Vertex Pharmaceuticals</h5>
+      <p>Project Highlight: Developed an internal tool for automated, high-throughput experimentation via nanoscale synthesis</p>
+      <p>Impact: Advanced research by identifying novel drugs with improved properties, saved $100K+ in costs, and reduced waste</p>
+      <ul style="list-style-type: square">
+        <li>Evaluated instruments and workflows for process improvement, increasing synthesis and testing to 5K+ samples/day. </li>
+        <li>Analyzed risks and opportunities to prioritize development of 2 software features to enable diverse reactions</li>
+        <li>Led 14 production cycles across cross-functional teams by streamlining project plan using Microsoft Teams and JIRA</li>
+        <li>Translated user requirements as software specifications, provided unit tests to ensure accuracy and completeness</li></ul>
+    <br>
+
+     <h5 class="jobtitles">Intern, Analytical Methods and Product Development || Dare Bioscience</h5>
+     <ul style="list-style-type: square">
+        <li>Authored standard operating procedures to consistently quantify KPI of product with >95% accuracy</li>
+        <li>Characterized product quality and provided technical guidance to manufacturers to make corrective actions</li>
+        <li>Introduced method qualification tests for sensitivity, accuracy, and repeatability for quality assurance</li></ul>
+    <br>
+
+    <h5 class="jobtitles">Intern, Medicinal Chemistry || RAPT Therapeutics</h5>
+    <ul style="list-style-type: square">
+        <li>Designed and synthesized key intermediates and small molecule drug targets under guidance of senior scientists</li>
+        <li>Demonstrated ability in characterizing organic compounds using analytical instruments (LCMS, NMR)</li>
+        <li>Analyzed structure-activity relationships (SAR) to guide design and synthesis of new targets to improve potency</li></ul>
+    <br>
+
+   <h5 class="jobtitles">Intern, Analytical Methods and Product Development || The EVERY Company</h5>
+   <ul style="list-style-type: square">
+        <li>Diagnosed interference issues via root-cause analysis, evaluated different colorimetric assays to determine best fit</li>
+        <li>Designed experiments to explore and validate enzymes for deglycosylation, reducing testing costs by 50%</li>
+        <li>Managed weekly project reports to guide product development, improving quantitative yield by 7%</li></ul>
+   </div>
+
+    <div id="community" class="w3-container menu w3-padding-48 w3-card">
+      <h5 class="jobtitles">UCSD Triton Engineering Student Council: Executive Board, External Affairs</h5>
+      <p class="w3-text-grey">I joined the Triton Engineering Student Council as a member of their Executive Board 
+        to contribute to UCSD's engineering community. I firmly believe that student led initiatives help empower
+        and inspire creative solutions to common problems. By partnering with different STEM companies, 
+        TESC delivers an engaging experience for recruiters, mentors, and students, allowing them to network and 
+        learn from each other. In this capacity, I:</p>
+        <ul style="list-style-type: square">
+            <li>Partnered with 22 companies to support student-led initiatives, resulting in a budget of $200K+ to support hackathons, career development events, and youth outreach programs</li>
+            <li>Improved student-recruiter engagement by 62% by introducing mock interviews</li>
+            <li>Hosted workshops to train new council members on methods of strategic planning and resource allocation</li>
+        </ul>
+         
+      <h5 class="jobtitles">UCSD Triton Gaming: Live Events Director</h5>
+      <p class="w3-text-grey">Video games are more than just recreational free-time activities - they’re the adventures created by 
+        one individual and explored by another. They invite strangers from varying backgrounds to become 
+        friends, they challenge teams to develop new strategies, and they encourage aspiring engineers 
+        and artists to ideate, iterate, and inspire.</p>
+      <p class="w3-text-grey"> Triton Gaming is a non-profit, student led organization that strives to create an epic, 
+        diverse, and all-inclusive gaming environment on campus through engaging entertainment experiences. 
+        As the Live Events Director, I:</p>
+        <ul style="list-style-type: square">
+            <li>Conducted participant recruitment efforts resulting in multiple studies and trial runs</li>
+            <li>Analyzed social media interactions and prioritized features to improve retention by 22%</li>
+            <li>Led a team of 30 students across different disciplines to plan, market, and host events for 2K+ attendees</li>
+            <li>Bridged the gap between industry sponsors and students through Q&A panels, featured demos, and tournaments</li>
+        </ul>
+    </div>  
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Modified with logic & love by Jess Lee</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>

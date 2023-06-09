@@ -66,6 +66,76 @@ body, html {
     width: 0
   }
 }
+
+.notesimg {
+  position:relative;
+  margin: 10px;
+}
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: block;
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #ededed;
+  border-top: 0;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion label {
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+
+  background: #5a83a4ef;
+  color: white;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #b1d0e9;
+  color: #383b3d;
+}
+
+.accordion .handle label:before {
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f078";
+}
+
 </style>
 </head>
 <body>
@@ -89,12 +159,42 @@ body, html {
 </div>
 
 <!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<header class="w3-display-container w3-grayscale-min w3-display-top" id="home">
+  <br>
+  <br>
+  <br>
+  <center><img src="./images/notes.jpg" width="1200" height="auto" class="notesimg"></center>
 </header>
 
-<div class="w3-container" id="about">
+<div class="w3-container" id="read">
   <div class="w3-content" style="max-width:1200px">
-    <img src="./images/lightbulb.png" alt="Illustration of connected lightbulbs from absurd.design" width="auto" height="400">
+    <section class="accordion">
+      <input type="checkbox" name="collapse" id="handle1" checked="checked">
+      <h2 class="handle">
+        <label for="handle1">Writing Prompt 1</label>
+      </h2>
+      <div class="content">
+        <p>Yeah mhm okay</p>
+      </div>
+    </section>
+    <section class="accordion">
+      <input type="checkbox" name="collapse2" id="handle2">
+      <h2 class="handle">
+        <label for="handle2">Writing Prompt 2</label>
+      </h2>
+      <div class="content">
+        <p>Test 123</p>
+      </div>
+    </section>
+    <section class="accordion">
+      <input type="checkbox" name="collapse2" id="handle3">
+      <h2 class="handle">
+        <label for="handle3">Notes</label>
+      </h2>
+      <div class="content">
+        <p>Beep boop</p>
+      </div>
+    </section>
   </div>
 </div>
 

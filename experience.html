@@ -5,6 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="main.css">
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,137 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Urbanist:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" href="/favicon.ico">
 </head>
-
-<style>
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
-
-h1, h2, h3, h4, h5, p{
-  font-family: "Inconsolata", sans-serif;
-}
-
-.altbg{
-  background:#aaa1cf;
-}
-
-.dbhigh{
-  background:#0b2855;
-}
-
-.bgimg {
-  background-position:top;
-  background:#5ea5de;
-  min-height: 50%;
-}
-
-.gnav{
-  font-size:medium;
-  background:#102034;
-  color:white;
-}
-
-
-.menu {
-  display: none;
-}
-
-.jobtitles{
-  font-family: "Inconsolata", sans-serif;
-}
-
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
-
-.typing-demo {
-  width: 20ch;
-  animation: typing 2s steps(30);
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: 'Bad Script', cursive;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-.notesimg {
-  position:relative;
-  margin: 10px;
-}
-
-.accordion > input[type="checkbox"] {
-  position: absolute;
-  left: -100vw;
-}
-
-.accordion .content {
-  overflow-y: hidden;
-  height: 0;
-  transition: height 0.3s ease;
-}
-
-.accordion > input[type="checkbox"]:checked ~ .content {
-  height: auto;
-  overflow: visible;
-}
-
-.accordion label {
-  display: block;
-}
-
-.accordion {
-  margin-bottom: 1em;
-}
-
-.accordion > input[type="checkbox"]:checked ~ .content {
-  padding: 15px;
-  border: 1px solid #ededed;
-  border-top: 0;
-}
-
-.accordion .handle {
-  margin: 0;
-  font-size: 1.125em;
-  line-height: 1.2em;
-}
-
-.accordion label {
-  cursor: pointer;
-  font-weight: normal;
-  padding: 15px;
-  font-family: "Inconsolata", sans-serif;
-  background: #5a83a4ef;
-  color: white;
-}
-
-.accordion label:hover,
-.accordion label:focus {
-  background: #b1d0e9;
-  color: #383b3d;
-}
-
-.accordion .handle label:before {
-  content: "\f054";
-  display: inline-block;
-  margin-right: 10px;
-  font-size: .58em;
-  line-height: 1.556em;
-  vertical-align: middle;
-  font-family: "Inconsolata", sans-serif;
-}
-
-.accordion > input[type="checkbox"]:checked ~ .handle label:before {
-  content: "\f078";
-}
-</style>
 
 <body>
 <!-- Links (sit on top) -->
@@ -164,12 +34,12 @@ h1, h2, h3, h4, h5, p{
 </div>
 
 <!-- Header with image -->
-<header class="w3-display-container w3-grayscale-min w3-display-top" id="home">
-  <br>
-  <br>
-  <br>
-  <center><img src="./images/notes.jpg" width="1200" height="auto" class="notesimg"></center>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
 </header>
+<br>
+<br>
+<br>
+<center><img src="./images/notes.jpg" width="1200" height="auto" class="notesimg"></center>
 
 <div class="w3-container" id="read">
   <div class="w3-content" style="max-width:1200px">
@@ -206,7 +76,7 @@ h1, h2, h3, h4, h5, p{
 
 <!-- Footer -->
 <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-  <p>Modified with logic & love by Jess Lee</p>
+  <p>Modified with logic & love by Jessica Lee</p>
 </footer>
 
 <script>

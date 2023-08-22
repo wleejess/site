@@ -1,6 +1,12 @@
-body, html {
+body, html, content, h5 {
   height: 100%;
   font-family: "Inconsolata", sans-serif;
+}
+
+.mainbgimg {
+  background-position:top;
+  background:#5ea5de;
+  min-height: 50%;
 }
 
 .bgimg {
@@ -16,13 +22,23 @@ body, html {
   color:white;
 }
 
+#container {
+  margin: auto;
+  background:#9ec3e2;
+  color: white;
+}
+
+.fmp {
+  position: relative;
+  padding: 20px;
+  background-color: #FFC2D1;
+  box-shadow: 5px 5px #9b95a3e5;
+  border: none;
+  font-family: 'Urbanist', sans-serif;
+}
 
 .menu {
   display: none;
-}
-
-.jobtitles{
-  font-family: "Inconsolata", sans-serif;
 }
 
 .wrapper {
@@ -44,6 +60,76 @@ body, html {
   from {
     width: 0
   }
+}
+
+.notesimg {
+  position:relative;
+  margin: 10px;
+}
+
+.accordion > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.accordion .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.accordion label {
+  display: block;
+}
+
+.accordion {
+  margin-bottom: 1em;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #ededed;
+  border-top: 0;
+}
+
+.accordion .handle {
+  margin: 0;
+  font-size: 1.125em;
+  line-height: 1.2em;
+}
+
+.accordion label {
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  font-family: "Inconsolata", sans-serif;
+  background: #5a83a4ef;
+  color: white;
+}
+
+.accordion label:hover,
+.accordion label:focus {
+  background: #b1d0e9;
+  color: #383b3d;
+}
+
+.accordion .handle label:before {
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.accordion > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f078";
 }
 
 /**

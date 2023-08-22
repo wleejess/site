@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Kalam&family=Source+Sans+3:wght@300&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&display=swap');
 
 body, html, content, h5 {
   height: 100%;
@@ -110,7 +110,7 @@ body, html, content, h5 {
   cursor: pointer;
   font-weight: normal;
   padding: 15px;
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   background: #5a83a4ef;
   color: white;
 }
@@ -128,7 +128,7 @@ body, html, content, h5 {
   font-size: .58em;
   line-height: 1.556em;
   vertical-align: middle;
-  font-family: "Inconsolata", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 .accordion > input[type="checkbox"]:checked ~ .handle label:before {

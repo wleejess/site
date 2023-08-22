@@ -4,140 +4,15 @@
 <title>jessica.lee</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Urbanist:wght@400;500&display=swap" rel="stylesheet">
-<style>
-
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-}
-
-.altbg{
-  background:#aaa1cf;
-}
-
-.dbhigh{
-  background:#0b2855;
-}
-
-.bgimg {
-  background-position:top;
-  background:#5ea5de;
-  min-height: 50%;
-}
-
-.gnav{
-  font-size:medium;
-  background:#102034;
-  color:white;
-}
-
-
-.menu {
-  display: none;
-}
-
-.jobtitles{
-  font-family: "Inconsolata", sans-serif;
-}
-
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
-
-.typing-demo {
-  width: 20ch;
-  animation: typing 2s steps(30);
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: 'Bad Script', cursive;
-}
-
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-/**
- * Tooltip Styles
- */
-
-/* Add this attribute to the element that needs a tooltip */
-[data-tooltip] {
-  position: relative;
-  z-index: 2;
-  cursor: pointer;
-}
-
-/* Hide the tooltip content by default */
-[data-tooltip]:before,
-[data-tooltip]:after {
-  visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Position tooltip above the element */
-[data-tooltip]:before {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
-  margin-left: -80px;
-  padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #000;
-  background-color: hsla(0, 0%, 20%, 0.9);
-  color: #fff;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-/* Triangle hack to make tooltip look like a speech bubble */
-[data-tooltip]:after {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0;
-}
-
-/* Show tooltip content on hover */
-[data-tooltip]:hover:before,
-[data-tooltip]:hover:after {
-  visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1;
-}
-
-</style>
 </head>
 <body>
-
 <!-- Links (sit on top) -->
 <div class="w3-top">
   <div class="w3-row w3-padding">
@@ -145,7 +20,7 @@ body, html {
       <a href="./index.html" class="w3-button w3-block gnav">HOME</a>
     </div>
     <div class="w3-col s3">
-      <a href="./explore.html" class="w3-button w3-block gnav">EXPLORE</a>
+      <a href="./explore.html" class="w3-button w3-block gnav">ABOUT ME</a>
     </div>
     <div class="w3-col s3">
       <a href="./experience.html" class="w3-button w3-block gnav">EXPERIENCE</a>
@@ -156,40 +31,32 @@ body, html {
   </div>
 </div>
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-greyscale-min" id="home">
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white wrapper typing-demo" style="font-size:76px">persistence is key!</span>
-  </div>
-  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-medium">
-    <span class="w3-tag" style="font-size: 18px">my story & an explanation.</span>
-  </div>
+<!-- Header with no image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
 </header>
 
 <!-- Info/Area Container -->
 <div class="w3-container" id="passion">
   <div class="w3-content" style="max-width:1200px">
-  <article>
     <img src="./images/dreamworld.png" width="500" height="auto">
     <p>For the longest time, I was certain that my passion was in research.</p>
     <p>As you might have noticed (or experienced for yourself), <u><b data-tooltip="A more accurate description is that they become refined.">passions change</b></u>.</p>
-    <p>A quick glance at my resume might suggest that my interests are simply bound by the laws of entropy, drifting towards disorder.<br>
-      However, I promise there is a method to my madness.</p>
+    <p>A quick glance at my background might suggest that I too, am simply bound by the laws of entropy, drifting towards disorder.<br>
+    </p> 
+    <p>However, I'm here to clarify.</p>
     <hr>
-    <p>Chemistry is magic. By leveraging our understanding of the world, we can direct <i>atoms</i> from different molecules
-      to come together, making something entirely new. Named reactions are like tried and true spells. And with each attempt
-      to synthesize a new drug, we get closer to changing the lives of patients around the world.
-      
-      I earned my B.S. in Nanoengineering and Chemistry at UCSD and worked in the research & development of treatments for: cancer, cystic fibrosis, and pain.</p>
+    <p>I was captivated by science and worked in the research & development of treatments for: cancer, cystic fibrosis, and pain. 
+      <br>Every experiment revealed more information, allowing us to adapt our strategy and get closer to changing the lives of patients.
+    </p>
     <hr>
-    <p>With each company I worked at and each project I worked on, my world expanded. One project in particular, was my catalyst for change.<br>
-      I developed soft skills as a project manager and worked with cross-functional teams across chemistry, biology, hardware engineering and software engineering to
-      build an automated tool to accelerate the drug discovery process. In an effort to better communicate user requirements with our engineers and analyze the large, 
-      multidimensional datasets we were generating, I began to teach myself Python and R. Realizing a need to establish fundamentals in programming,
-      I am now pursuing a B.S. in Computer Science at Oregon State University.</p>
-
-    <p>If you're curious about my past work, you can find my <a href="./experience.html">CV</a>, and <a href="./projects.html">projects</a>.</p>
-  </article>
+    <p>
+      Likewise, with each company I worked at, each project I advanced, and each team I collaborated with, I learned about <u><b data-tooltip="Machine learning, robotics, and automation">new technologies</b></u> and <u><b data-tooltip="Project management, analytical thinking, and resourcefulness">developed transferrable skills.</b></u>
+      <br>While there are multiple variables, one constant is this: <b>I have a bias for action.</b>
+    </p>
+    <p>
+      Driven by curiosity and a desire for growth, I am not afraid to take on new challenges.
+      <br>
+    </p>
   </div>
 </div>
 

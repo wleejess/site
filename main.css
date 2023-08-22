@@ -1,39 +1,50 @@
-h3 {
-    animation-duration: 8s;
-    animation-name: slidein;
-    animation-iteration-count: infinite;
-}
-
-@keyframes slidein {
-  0% {
-    margin-left: 0%;
-  }
-  50% {
-    margin-left: 300px;
-  }
-  100% {
-    margin-left: 0%;
-  }
-}
-
 body, html {
-    height: 100%;
-    font-family: "Inconsolata", sans-serif;
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position:top;
+  background:#9ec3e2;
+;
+  min-height: 7%;
+}
+
+.gnav{
+  font-size:medium;
+  background:#102034;
+  color:white;
+}
+
+
+.menu {
+  display: none;
+}
+
+.jobtitles{
+  font-family: "Inconsolata", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(30);
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: 'Bad Script', cursive;
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
-  
-  .bgimg {
-    background-position:top;
-    background:#aaa1cf;
-    min-height: 50%;
-  }
-  
-  .gnav{
-    background:#e7e2de;
-  }
-  
-  .menu {
-    display: none;
-  }
+}
 
 /**
  * Tooltip Styles

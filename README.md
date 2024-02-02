@@ -1,14 +1,14 @@
 ## Hey!
-Link: https://wleejess.github.io/home
+Link: https://wleejess.github.io/site
 Technologies currently used: HTML, CSS, JavaScript.
 
 ### Action Items
 * Update experiences
 * Link resume
-* Find ways to display projects (animations? gifs?)
+* Find ways to display projects
 
 ### Completed
-* General layoug and styling
+* General layout and styling
 * Navigation bars
 * Writing/descriptions
 
